@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/altTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Titulo:"
+        android:layout_weight="0.11" />
+
+    <EditText
+        android:id="@+id/altAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Autor:" />
+
+    <EditText
+        android:id="@+id/altEditora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Editora:" />
+
+    <Button
+        android:id="@+id/butAlterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editEditora"
+        android:layout_alignRight="@+id/editEditora"
+        android:layout_below="@+id/editEditora"
+        android:onClick="alterarRegistro"
+        android:text="Alterar" />
+
+    <Button
+        android:id="@+id/butApagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editEditora"
+        android:layout_alignRight="@+id/editEditora"
+        android:layout_below="@+id/editEditora"
+        android:onClick="apagaRegistro"
+        android:text="Apagar" />
+</LinearLayout>
